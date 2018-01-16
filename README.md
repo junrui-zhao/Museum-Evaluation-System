@@ -1,6 +1,6 @@
-# Museum-Evaluation-System
-## 博物馆运行评估系统-前端页面
-### 使用Amaze UI
+# Museum-Evaluation-System - FrontEnd
+### 博物馆运行评估系统-前端页面
+### 使用Amaze UI http://amazeui.org/
 
 1.	登陆
 2.	用户管理（系统管理员）
