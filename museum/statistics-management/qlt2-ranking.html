@@ -1,0 +1,412 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>博物馆运行评估系统</title>
+    <meta name="description" content="这是一个 index 页面">
+    <meta name="keywords" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="icon" type="image/png" href="../assets/i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/i/app-icon72x72@2x.png">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <link rel="stylesheet" href="../assets/css/amazeui.min.css" />
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
+    <link rel="stylesheet" href="../assets/css/amazeui.datatables.css"/>
+</head>
+
+<body data-type="generalComponents">
+
+
+    <header class="am-topbar am-topbar-inverse admin-header">
+        <div class="am-topbar-brand">
+            <a href="javascript:;" class="tpl-logo">
+                <img src="../assets/img/logo.png" alt="">
+            </a>
+        </div>
+        <div class="am-icon-list tpl-header-nav-hover-ico am-fl am-margin-right">
+
+        </div>
+
+        <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+
+        <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+
+            <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list tpl-header-list">
+
+                <li class="am-hide-sm-only"><a href="javascript:;" id="admin-fullscreen" class="tpl-header-list-link"><span class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a></li>
+
+                <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
+                    <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
+                        <span class="tpl-header-list-user-nick">系统管理员</span><span class="tpl-header-list-user-ico"> <img src="../assets/img/user01.png"></span>
+                    </a>
+                    <ul class="am-dropdown-content">
+                        <li><a href="#"><span class="am-icon-bell-o"></span> 资料</a></li>
+                        <li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>
+                        <li><a href="#"><span class="am-icon-power-off"></span> 退出</a></li>
+                    </ul>
+                </li>
+                <li><a href="###" class="tpl-header-list-link"><span class="am-icon-sign-out tpl-header-list-ico-out-size"></span></a></li>
+            </ul>
+        </div>
+    </header>
+
+
+
+
+
+
+
+    <div class="tpl-page-container tpl-page-header-fixed">
+
+
+        <div class="tpl-left-nav tpl-left-nav-hover">
+            <div class="tpl-left-nav-title">
+                博物馆运行评估系统
+            </div>
+            <div class="tpl-left-nav-list">
+                <ul class="tpl-left-nav-menu">
+                    <li class="tpl-left-nav-item">
+                        <a href="../index.html" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-home"></i>
+                            <span>首页</span>
+                        </a>
+                    </li>
+
+                    <li class="tpl-left-nav-item">
+                        <a href="../museum-management/list.html" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-bank"></i>
+                            <span>博物馆管理</span>
+                            
+                        </a>
+                    </li>
+
+                    <li class="tpl-left-nav-item">
+                        <a href="../declaration-management/list.html" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-file-text-o"></i>
+                            <span>申报书管理</span>
+                            
+                        </a>
+                    </li>
+
+                    <li class="tpl-left-nav-item">
+                        <a href="../sheet-management/list.html" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-calculator"></i>
+                            <span>专家打分表管理</span>
+                            
+                        </a>
+                    </li>
+
+                    <li class="tpl-left-nav-item">
+                        <!-- 打开状态 a 标签添加 active 即可   -->
+                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-users"></i>
+                            <span>用户管理</span>
+                            <!-- 列表打开状态的i标签添加 tpl-left-nav-more-ico-rotate 图表即90°旋转  -->
+                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right "></i>
+                        </a>
+                        <ul class="tpl-left-nav-sub-menu">
+                            <li>
+                                <!-- 打开状态 a 标签添加 active 即可   -->
+                                <a href="../user-management/list.html" class="">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>用户列表</span>
+
+                                </a>
+
+                                <a href="../user-management/role-management.html">
+                                        <i class="am-icon-angle-right"></i>
+                                    <span>用户角色管理</span>
+
+                                </a>
+                                
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="tpl-left-nav-item">
+                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-graduation-cap"></i>
+                            <span>专家管理</span>
+                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                        </a>
+                        <ul class="tpl-left-nav-sub-menu">
+                            <li>
+                                <a href="../expert-management/list.html" class="">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>专家列表</span>
+                                    
+                                </a>
+
+                                <a href="../expert-management/assign-expert.html">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>指定年度评审专家</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="tpl-left-nav-item">
+                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list active">
+                            <i class="am-icon-bar-chart "></i>
+                            <span>分数排名统计</span>
+                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
+                        </a>
+                        <ul class="tpl-left-nav-sub-menu" style="display:block">
+                            <li>
+                                <a href="total-ranking.html" class="active">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>统计表</span>
+                                    
+                                </a>
+
+                                <a href="tendency-chart.html">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>统计图</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="tpl-content-wrapper">
+            <div class="tpl-content-page-title">
+                统计表
+            </div>
+            <ol class="am-breadcrumb">
+                <li><a href="#" class="am-icon-home">首页</a></li>
+                <li><a href="#">分数统计</a></li>
+                <li class="am-active">统计表</li>
+            </ol>
+
+
+            <div class="tpl-portlet-components">
+
+                <ul class="am-nav am-nav-tabs am-text-sm">
+
+                    <li>
+                        <a href="total-ranking.html">总分排名</a>
+                    </li>
+
+                    <li class="am-dropdown" data-am-dropdown>
+                        <a class="am-dropdown-toggle" data-am-dropdown-toggle="" href="javascript:;">
+                            分数汇总 <span class="am-icon-caret-down"></span>
+                        </a>
+                        <ul class="am-dropdown-content">
+                            <li><a href="total-score.html">1. 定性定量总分</a></li>
+                            <li><a href="qlt-score.html">2. 定性一级指标分数</a></li>
+                            <li><a href="qnt-score.html">3. 定量一级指标分数</a></li>
+                        </ul>
+                    </li>
+                    <li class="am-dropdown" data-am-dropdown="">
+                        <a class="am-dropdown-toggle" data-am-dropdown-toggle="" href="javascript:;">
+                            定性排名 <span class="am-icon-caret-down"></span>
+                        </a>
+                        <ul class="am-dropdown-content ">
+                            <li><a href="qlt-ranking.html">1. 定性总排名</a></li>
+                            <li><a href="qlt1-ranking.html">2. 定性一级指标排名</a></li>
+                            <li class="am-active"><a href="qlt2-ranking.html">3. 定性二级指标排名</a></li>
+                        </ul>
+                    </li>
+                    <li class="am-dropdown" data-am-dropdown="">
+                        <a class="am-dropdown-toggle" data-am-dropdown-toggle="" href="javascript:;">
+                            定量排名 <span class="am-icon-caret-down"></span>
+                        </a>
+                        <ul class="am-dropdown-content">
+                            <li><a href="qnt-ranking.html">1. 定量总排名</a></li>
+                            <li><a href="qnt1-ranking.html">2. 定量一级指标排名</a></li>
+                            <li><a href="qnt2-ranking.html">3. 定量二级指标排名</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <br>
+                <div class="portlet-title">
+                    <div class="caption font-green bold">
+                        <span class="am-icon-code"></span> 定性二级指标排名
+                    </div>                
+                </div>
+                <div class="tpl-block">
+
+                    <div class="am-g">
+                        <div class="am-u-sm-12 am-text-sm">
+                            <form class="am-form-inline" role="form">
+                                查询条件：
+                                <div class="am-form-group">
+
+
+                                    <select data-am-selected="{btnSize: 'sm'}">
+                                        <option value="option1">所有年份</option>
+                                          <option value="option2">2017</option>
+                                          <option value="option3">2016</option>
+                                          <option value="option3">2015</option>
+                                          <option value="option3">2014</option>
+                                    </select>
+                                </div>
+                                <div class="am-form-group">
+
+
+                                    <select data-am-selected="{btnSize: 'sm'}">
+                                        <option value="option1">所有类型</option>
+                                          <option value="option2">自然、科技与专题类</option>
+                                          <option value="option3">纪念类</option>
+                                          <option value="option3">遗址类</option>
+                                    </select>
+                                </div>
+                                <div class="am-form-group">
+
+
+                                    <select data-am-selected="{btnSize: 'sm'}">
+                                        <option value="option1">所有级别</option>
+                                          <option value="option2">省级及省级以上</option>
+                                          <option value="option3">其他</option>
+                                    </select>
+                                </div>
+                                <div class="am-input-group am-input-group-sm">
+                                </div>
+                                <div class="am-fr">
+                                    <button type="submit" class="am-btn am-btn-success am-radius am-btn-sm ">
+                                        <span class="am-icon-searcht"></span>查询</button>
+                                <a href="">
+                                        <button type="button" class="am-btn am-btn-default am-btn-secondary am-btn-sm"><span class="am-icon-download"></span> 导出为Excel</button>                                        
+                                </a>
+                                </div>
+                                
+
+                            </form>
+                        </div>
+                        
+                    </div>
+                    <hr>
+                    <div class="am-g">
+                        <div class="am-u-sm-12 am-text-sm">
+                             <table class="am-table am-table-striped am-table-compact" id="qlt2-ranking">
+                                  <thead>
+                                  <tr>
+                                    <th>博物馆名称</th>
+                                    <th>博物馆类型</th>
+                                    <th>博物馆级别</th>
+                                    <th>年份</th>
+                                    <th>藏品搜集</th>
+                                    <th>藏品保护</th>
+                                    <th>藏品保管</th>
+                                    <th>学术活动</th>
+                                    <th>代表性研究成果</th>
+                                    <th>基本陈列</th>
+                                    <th>代表性原创临时展览</th>
+                                    <th>博物馆讲解</th>
+                                    <th>教育项目</th>
+                                    <th>公共关系</th>
+                                    <th>公众服务</th>
+                                    <th>博物馆网站</th>
+                                    <th>发展规划</th>
+                                    <th>制度建设</th>
+                                    <th>安全管理</th>
+                                    <th>人才培养</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr class="">
+                                    <td>博物馆1</td>
+                                    <td>自然、科技与专题类</td>
+                                    <td>其他</td>
+                                    <td class="center"> 2017</td>
+                                    <td class="center">1</td>
+                                    <td class="center">1</td>
+                                    <td class="center">1</td>
+                                    <td class="center">2</td>
+                                    <td class="center">2</td>
+                                    <td class="center">1</td>
+                                    <td class="center">1</td>
+                                    <td class="center">1</td>
+                                    <td class="center">2</td>
+                                    <td class="center">2</td>
+                                    <td class="center">2</td>
+                                    <td class="center">1</td>
+                                    <td class="center">1</td>
+                                    <td class="center">1</td>
+                                    <td class="center">2</td>
+                                    <td class="center">2</td>
+                                  </tr>
+                                  <tr class="">
+                                    <td>博物馆2</td>
+                                    <td>纪念类</td>
+                                    <td>其他</td>
+                                    <td class="center"> 2017</td>
+                                    <td class="center">2</td>
+                                    <td class="center">4</td>
+                                    <td class="center">3</td>
+                                    <td class="center">1</td>
+                                    <td class="center">1</td>
+                                    <td class="center">2</td>
+                                    <td class="center">4</td>
+                                    <td class="center">3</td>
+                                    <td class="center">1</td>
+                                    <td class="center">1</td>
+                                    <td class="center">1</td>
+                                    <td class="center">2</td>
+                                    <td class="center">4</td>
+                                    <td class="center">3</td>
+                                    <td class="center">1</td>
+                                    <td class="center">1</td>
+                                  </tr>
+                                  <tr class="">
+                                    <td>博物馆3</td>
+                                    <td>遗址类</td>
+                                    <td>省级及省级以上</td>
+                                    <td class="center"> 2017</td>
+                                    <td class="center">3</td>
+                                    <td class="center">2</td>
+                                    <td class="center">2</td>
+                                    <td class="center">3</td>
+                                    <td class="center">3</td>
+                                    <td class="center">3</td>
+                                    <td class="center">2</td>
+                                    <td class="center">2</td>
+                                    <td class="center">3</td>
+                                    <td class="center">3</td>
+                                    <td class="center">3</td>
+                                    <td class="center">3</td>
+                                    <td class="center">2</td>
+                                    <td class="center">2</td>
+                                    <td class="center">3</td>
+                                    <td class="center">3</td>
+                                  </tr>
+                                  
+                                  <!-- more data -->
+                                  </tbody>
+                                </table>                          
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+                <div class="tpl-alert"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/amazeui.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/amazeui.datatables.min.js"></script>
+    <script>
+      $(function() {
+        $('#qlt2-ranking').DataTable();
+      });
+    </script>
+</body>
+
+</html>
