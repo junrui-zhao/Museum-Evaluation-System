@@ -1,5 +1,5 @@
 # Museum-Evaluation-System
-# 博物馆运行评估系统-前端页面
+## 博物馆运行评估系统-前端页面
 ### 使用Amaze UI
 
 1.	登陆
@@ -30,5 +30,18 @@
 6.1	打分表列表 – 筛选：专家姓名搜索、年份、已提交/未提交
 6.2	上传打分表
 
-
-
+---
+statistics-management
+1.	总分排名 total-ranking
+2.	分数汇总 
+2.1	定性定量(qualitative-quantitate)总分  total-score
+2.2	定性一级指标分数 qlt-score
+2.3	定量一级指标分数 qnt-score
+3.	定性排名 
+3.1	定性总排名qlt-ranking
+3.2	定性一级指标排名 qlt1-ranking
+3.3	定性二级指标排名 qlt2-ranking
+4.	定量排名
+4.1	定量总排名 qnt-ranking
+4.2	定量一级指标排名 qnt1-ranking
+4.3	定量二级指标排名 qnt2-ranking
